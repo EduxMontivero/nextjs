@@ -6,7 +6,7 @@ const Blog = ({user}) => {
 
 
 export async function getServerSideProps(){
-    const res = await fetch('https://api.github.com/users/fazttech')
+    const res = await fetch('http://prestadores.osunlar.org:88/test/')
     const data = await res.json();
 
     console.log(data)
